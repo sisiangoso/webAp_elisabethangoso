@@ -1,0 +1,49 @@
+.comment-form {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: 100px;
+    .ui-status {
+        &.error {
+            text-align: center;
+            background-color: $form-error-background-color;
+            padding: 10px;
+            border-radius: 5px;
+            color: $form-error-font-color;
+            margin-bottom: 10px;
+            display: none;
+        }
+        &.loading {
+            text-align: center;
+            margin-bottom: 10px;
+            display: none;
+        }
+    }
+    
+    &.error .ui-status.error {
+        display: block;
+    }
+    
+    &.loading .ui-status.loading {
+        display: block;
+    }
+    
+    @include if-tablet-landscape {
+        .form-control-group {
+            box-sizing: border-box;
+            width: calc(50% - 4px);
+            display: inline-block;
+            padding: 0 5px;
+        }
+    }
+    @include if-mobile-portrait{
+        .form-control-group {
+            box-sizing: border-box;
+            width: 50%;
+            display: inline-block;
+            padding: 0 5px;
+            margin-top: 0px;
+        }
+    }
+    
+}

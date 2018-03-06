@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'montserrat';
+    src: url('../../dist/fonts/Montserrat-Regular.ttf');
+} 
+// Font families
+$main-font-family: helvetica;
+$title-font-family: 'arial';
+$body-font-family: $main-font-family;
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../../dist/fonts/Montserrat-Bold.ttf');
+} 
+@font-face {
+    font-family: 'peacesans';
+    src: url('../../dist/fonts/peacesans.otf');
+} 
+
+// Font sizes
+$font-size-base: 15px;
+$font-size-small: $font-size-base - 4px;
+$font-size-large: $font-size-base + 5px;
+$font-size-h1: $font-size-base + 15px;
+$font-size-h2: $font-size-base + 12px;
+$font-size-h3: $font-size-base + 9px;
+$font-size-h4: $font-size-base + 6px;
+$font-size-h5: $font-size-base + 3px;
+$font-size-h6: $font-size-base;
+
+// Base colors
+$color-amazing-39: #F8695B;
+$color-grastur: #17434E;
+$color-sidonia-orange: #FDAA10;
+$color-less-is-less: #f8f5ee;
+$color-silver: #DBDBDB;
+$color-yellow: #fff19a;
+$color-lightgreen: #b0ba32;
+$color-darkgreen: #457b2f;
+$color-lemongreen: #c9d439;
+$color-white: #ffffff;
+
+// Main components colors
+$main-text-color: $color-grastur;
+$links-color: $color-amazing-39;
+
+// Responsive
+// 667 iphone landscape. 768 ipad portrait
+$mobile-portrait-width: 414px;
+$mobile-landscape-width: 767px;
+$tablet-portrait-width: $mobile-landscape-width + 1;
+$tablet-landscape-width: 1024px;
+
+// Forms variables
+$form-input-border-color:$color-white;
+$form-input-outline-color: $color-silver;
+$form-button-background-color: $color-darkgreen;
+$form-button-font-color: $color-white;
+$form-error-background-color: $color-amazing-39;
+$form-error-font-color: $color-white;

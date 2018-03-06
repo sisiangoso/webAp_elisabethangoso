@@ -1,0 +1,56 @@
+ .title-img2 {
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(img/portadadetalle.jpg);
+    height: 80vh;
+    transition: background-size 0.5s;
+    border-radius: 8px;
+    margin-top:90px;
+
+    @include if-mobile-portrait {
+        background-size: 190%;
+        background-position-x: -90px;
+        background-position-y: 0px;
+        height: 250px;
+        width: 98%;
+        justify-content: center;
+        margin-top: 110px;
+        margin-bottom: -20px;
+        margin-left:3px;
+        border-radius: 1%;
+        }
+        
+        
+        //@include if-mobile-landscape {
+ 
+           // background-position-x: -90px;
+           // background-position-y: -80px;
+           // height: 550px;
+          //  width: 95%;
+          //  justify-content: center;
+          //  margin-top: 110px;
+          //  margin-bottom: -20px;
+          //  margin-left: 10px;
+           // border-radius: 1%;
+           // }        
+        @include if-desktop {
+            background-size: 100% 100%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-image: url(img/portadadetalle.jpg);
+            height: 80vh;
+            transition: background-size 0.5s;
+            border-radius: 8px;
+            margin-top:90px;
+            }
+
+    &:hover {
+        background-size: 115% 115%;
+        @include if-mobile-portrait {
+        background-size: 140%;
+        background-position-x: -75px;
+        }
+    }
+   
+}
